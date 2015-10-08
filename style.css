@@ -24,7 +24,7 @@ body {
 	text-shadow:1px 1px 2px #f0f0f0;
 }
 
-.section h2{
+.section h1{
 	margin:50px 0px 30px 50px;
 }
 
@@ -35,7 +35,7 @@ body {
 
 .black {
 	color:#fff;
-	background:#000;
+	background:#000 url(flowers.jpeg) repeat-x bottom left;
 }
 
 .white {
