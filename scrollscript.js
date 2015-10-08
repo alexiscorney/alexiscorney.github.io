@@ -1,12 +1,15 @@
 $(function() {
-	$('ul.naviagtion a').blind('click', function(event){
+	$('ul.navigation a').bind('click',function(event){
 		var $anchor = $(this);
-	})
-
-	$('html', 'body').stop().animate({
-		scrollleft: $($anchor.attr('href')).offset().left
-	}, 1000);
-	event.preventDefault();
+		/*
+		if you want to use one of the easing effects:
+		$('html, body').stop().animate({
+			scrollLeft: $($anchor.attr('href')).offset().left
+		}, 1500,'easeInOutExpo');
+		 */
+		$('html, body').stop().animate({
+			scrollLeft: $($anchor.attr('href')).offset().left
+		}, 1000);
+		event.preventDefault();
 	});
 });
-
